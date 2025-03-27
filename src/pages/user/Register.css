@@ -1,0 +1,147 @@
+/* Ensure the entire page is centered */
+.container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f5f5;
+ 
+}
+
+/* Wrapper that holds both sections */
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  /*background-color: white;*/
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  
+}
+
+/* Left Image Section 
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c4641;
+  padding: 20px;
+} */
+
+.register-image {
+  max-width: 400px;
+  height: 500px;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Right Form Section */
+.form-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Form Frame*/ 
+.form-frame {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+/* Title and Heading */
+.system-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6b7280;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.form-heading {
+  font-size: 26px;
+  color: #3c4641;
+  margin: 10px 0 20px;
+}
+
+/* Login Link */
+.login-link {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #6b7280;
+}
+
+.login-link a {
+  color: #3c4641;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Form Styling */
+form {
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3c4641;
+  box-shadow: 0 0 4px rgba(60, 70, 65, 0.5);
+}
+
+/* Register Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color:#45a049;;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2e3733;
+}
+
+/* Ensure both sections are equally centered */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .image-section {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .register-image {
+    width: 80%;
+    border-radius: 10px;
+  }
+}

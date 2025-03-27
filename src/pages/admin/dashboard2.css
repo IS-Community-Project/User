@@ -1,0 +1,136 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8fafc;
+}
+
+/* Main Content Area */
+.main-content {
+  width: calc(100% - 250px); /* Leave space for the sidebar */
+  padding: 20px;
+  margin-left: 250px;
+  background-color: #ffffff;
+}
+
+/* Title */
+.main-content h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Equipment Table */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.equipment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.equipment-table th,
+.equipment-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.equipment-table th {
+  background-color: #313233;
+  color: white;
+  font-size: 16px;
+}
+
+.equipment-table tbody tr:nth-child(even) {
+  background-color: #f8f9fc;
+}
+
+.equipment-table tbody tr:hover {
+  background-color: #e2e8f0;
+  transition: background 0.3s;
+}
+
+/* Status Styling */
+.status {
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.status.available {
+  background-color: #75ABAD;
+  color: white;
+}
+
+.status.in-use {
+  background-color: #75ABAD;
+  color: white;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.update-button,
+.remove-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.update-button {
+  background-color: #75ABAD;
+  color: white;
+}
+
+.update-button:hover {
+  background-color: #75ABAD;
+}
+
+.remove-button {
+  background-color: #75ABAD;
+  color: white;
+}
+
+.remove-button:hover {
+  background-color: #75ABAD;
+}
+
+/* Add Button */
+.add-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 15px;
+  background-color: #3d3d3d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #75ABAD;
+}

@@ -1,0 +1,92 @@
+.reserve-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.form-section {
+  flex: 1;
+  max-width: 500px;
+}
+
+.remain-item-details {
+  flex: 1;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.runner-image {
+  width: 100%;
+  max-width: 300px;
+  object-fit: contain;
+}
+
+.equipment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Flexbox for Initials with Name, Faculty, and Phone Number */
+.form-group-inline {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+label {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+input {
+  flex-grow: 1;
+}
+
+/* General form-group style for other inputs */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Buttons */
+.save-btn, .reserve-button {
+  background-color: #75ABAD;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.save-btn:hover, .reserve-button:hover {
+  background-color: #45a049;
+}

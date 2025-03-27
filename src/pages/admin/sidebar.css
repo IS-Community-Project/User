@@ -1,0 +1,156 @@
+/* Sidebar Styling */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Adjust spacing */
+  border-right: 1px solid #e5e7eb;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto; /* Enable scrolling if needed */
+}
+
+/* Brand Name */
+.brand {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Menu */
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #6b7280;
+  padding: 12px 15px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu-item.active {
+  background-color: #eef2f8;
+  color: #0d1c3b;
+}
+
+.menu-item .icon {
+  font-size: 22px;
+  margin-right: 12px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Separator */
+.separator {
+  height: 1px;
+  width: 100%;
+  background-color: #e5e7eb;
+  margin: 20px 0;
+}
+
+/* Logout Button */
+.logout {
+  font-size: 16px;
+  color: #6b7280;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 15px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.logout:hover {
+  background-color: #f1f5f9;
+}
+
+.logout .icon {
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 220px; /* Smaller width on medium screens */
+  }
+
+  .menu-item {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .logout {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+    padding: 15px 8px;
+  }
+
+  .brand {
+    font-size: 20px;
+  }
+
+  .menu-item {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .menu-item .icon,
+  .logout .icon {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 180px;
+  }
+
+  .brand {
+    font-size: 18px;
+  }
+
+  .menu-item {
+    font-size: 13px;
+    padding: 7px 8px;
+  }
+
+  .logout {
+    font-size: 13px;
+    padding: 7px 8px;
+  }
+}
