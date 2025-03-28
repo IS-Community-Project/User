@@ -12,7 +12,7 @@ const LoginPage = () => {
   // Handle form submission for login
   const handleLogin = (e) => {
     e.preventDefault(); // Prevent the form from submitting and refreshing the page
-    navigate("/Home2"); // Redirect to home page
+    navigate("/Home"); // Redirect to home page
   };
 
   return (
@@ -28,12 +28,13 @@ const LoginPage = () => {
         <div className="form-container">
           <div className="form-box">
            
-            <h1 className="app-title">equipZone</h1>
+            <h1 className="app-title">equip Zone</h1>
           
             <p>Login to your account</p>
-            <p className="login-link">
-            Already logged in? <a href="/Register">Signup</a>
-            </p>
+            <p className="login-link" style={{ marginTop: "20px" }}>
+  Already logged in? <a href="/Register">Signup</a>
+  </p>
+
             
             <form className="login-form" onSubmit={handleLogin}>
               <div className="label1">

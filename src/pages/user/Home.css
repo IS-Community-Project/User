@@ -62,7 +62,7 @@ body {
 
 .slider {
   width: 100%;
-  max-width: 1450px;
+  max-width:1650px;
   margin: auto;
 }
 
@@ -86,8 +86,8 @@ body {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1000px;
-  width: 90%;
+  max-width: 1100px;
+  width: 80%;
   margin: auto;
 }
 
@@ -98,12 +98,13 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 30px;
+  padding-left: 70px;
   
 }
 
 .person-row {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   justify-content: center; /* Centers items */
   flex-wrap: wrap;
   width: 100%;
@@ -122,7 +123,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 40px;
+  margin-left: 50px;
 }
 
 

@@ -33,11 +33,7 @@
   padding: 20px;
 } */
 
-.register-image {
-  max-width: 400px;
-  height: 500px;
-  border-radius: 10px 0 0 10px;
-}
+
 
 /* Right Form Section */
 .form-section {
@@ -59,7 +55,7 @@
   background-color: #f9f9f9;
 }
 
-/* Title and Heading */
+/* Title and Heading 
 .system-title {
   font-size: 14px;
   font-weight: bold;
