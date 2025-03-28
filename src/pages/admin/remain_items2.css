@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   background-color: #f4f4f4;
   margin: 0;
+  margin-left:400px;
 }
 
 .card {
@@ -15,17 +16,22 @@
   max-width: 1200px;
   padding: 30px;
   box-sizing: border-box;
+  height: 90vh;
 }
 
 .content-container {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  height: 90vh;
+ 
 }
 
 .form-section {
   flex: 1;
-  max-width: 500px;
+  max-width: 700px;
+  height: 90vh;
+  
 }
 
 .remain-item-details {
@@ -40,15 +46,16 @@
 }
 
 .runner-image {
-  width: 100%;
-  max-width: 300px;
+  margin-bottom: 130px;
+  
   object-fit: contain;
 }
 
 .equipment-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 4px;
+  height: 90vh;
 }
 
 /* Flexbox for Initials with Name, Faculty, and Phone Number */
@@ -62,6 +69,7 @@
 label {
   flex-shrink: 0;
   width: 200px;
+  margin-top: 18px;
 }
 
 input {
@@ -72,12 +80,13 @@ input {
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
+  width: 400px;
 }
 
 /* Buttons */
 .save-btn, .reserve-button {
-  background-color: #75ABAD;
+  background-color:#45a049;;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -88,5 +97,6 @@ input {
 }
 
 .save-btn:hover, .reserve-button:hover {
-  background-color: #45a049;
+  background-color:  #2e3733;
 }
+
