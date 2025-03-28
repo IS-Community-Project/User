@@ -17,6 +17,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar ul {
@@ -24,6 +30,7 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .navbar li {
@@ -38,6 +45,7 @@ body {
 
 .nav-right {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -62,7 +70,7 @@ body {
 
 .slider {
   width: 100%;
-  max-width:1650px;
+  max-width: 1650px;
   margin: auto;
 }
 
@@ -99,16 +107,15 @@ body {
   flex-wrap: wrap;
   padding-top: 30px;
   padding-left: 70px;
-  
 }
 
 .person-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
-  justify-content: center; /* Centers items */
-  flex-wrap: wrap;
+  justify-items: center;
   width: 100%;
-  max-width: 700px; /* Ensures equal spacing */
+  max-width: 800px;
 }
 
 .person-card {
@@ -118,14 +125,12 @@ body {
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   width: 220px;
-  min-height: 220px; /* Ensures equal height */
+  min-height: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 50px;
 }
-
 
 .person-card img {
   width: 80px;
@@ -133,16 +138,6 @@ body {
   border-radius: 50%;
   margin-bottom: 10px;
 }
-
-.person-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
-  gap: 20px;
-  justify-items: center;
-  width: 100%;
-  max-width: 800px;
-}
-
 
 .person-card p {
   margin: 5px 0;
@@ -153,15 +148,12 @@ body {
   flex: 1;
   min-width: 250px;
   background: white;
- /* padding: 15px;*/
- margin-top: 30px;
+  margin-top: 30px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-left: -200px;
-  
-  
-  
+  padding: 15px;
+  width: 100%;
 }
 
 .opening-hours h3 {
@@ -171,7 +163,6 @@ body {
 .opening-hours table {
   width: 100%;
   border-collapse: collapse;
- 
 }
 
 .opening-hours td {
@@ -179,15 +170,15 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .navbar {
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
 
   .navbar ul {
     flex-direction: column;
+    align-items: center;
   }
 
   .nav-right {
@@ -199,8 +190,39 @@ body {
     align-items: center;
   }
 
+  .contact-info {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .person-row {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .person-card {
+    width: 180px;
+    padding: 30px;
+  }
+
   .opening-hours {
-    margin-bottom: 20px;
-    
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .person-card {
+    width: 160px;
+    padding: 25px;
   }
 }
