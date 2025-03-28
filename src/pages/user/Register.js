@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import registrationImage from "../../assets/S_New.png"; 
+import registrationImage from "../../assets/Signup_S.png"; 
 import "./Register.css";
 
 const RegistrationPage = () => {
@@ -27,11 +27,14 @@ const RegistrationPage = () => {
         {/* Right Form Section */}
         <div className="form-section">
           <div className="form-frame">
-            <h2 className="system-title">Equip Zone</h2>
-            <h1 className="form-heading">Create new account.</h1>
-            <p className="login-link">
-              Already a Member? <a href="/login">Login</a>
-            </p>
+            
+          
+            <h1 className="app-title">equip Zone</h1>
+          
+          <p style={{ marginTop: "20px" }}>Create new account.</p>
+          <p className="login-link" style={{ marginTop: "20px" }}>
+          Already a Member?  <a href="/login">Login</a>
+          </p>
 
             <form onSubmit={handleRegister}>
 
