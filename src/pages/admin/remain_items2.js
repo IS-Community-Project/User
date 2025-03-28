@@ -14,7 +14,7 @@ const RemainItems2 = () => {
     // You can perform any validation or form handling here
 
     // Navigate to the next page (RemainItems3)
-    navigate("/remain_items1");
+    navigate("/remain_items1_user");
   };
 
   return (
@@ -26,9 +26,11 @@ const RemainItems2 = () => {
           <div className="form-section">
             <form className="equipment-form" onSubmit={handleSubmit}>
               <div className="form-group">
-                <h3>SPORTS EQUIPMENT MANAGEMENT SYSTEM</h3>
-                <h1>equipZone</h1>
-                <h2>Reserve A Equipment</h2>
+                
+              
+    <h1>equip Zone</h1>
+    <p>Reserve A Equipment</p>
+
 
                 <label htmlFor="name">Initials with Name</label>
                 <input

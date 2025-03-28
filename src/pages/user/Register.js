@@ -38,7 +38,7 @@ const RegistrationPage = () => {
 
             <form onSubmit={handleRegister}>
 
-            <div style={{ display: "flex", justifyContent: "flex-end", flexDirection: "column", textAlign: "left" }}>
+            <div style={{ display: "flex", justifyContent: "flex-end", flexDirection: "column", textAlign: "left", paddingTop: "1px"}}>
             
             <label htmlFor="index-number">User Name</label>
               <input 
@@ -51,7 +51,7 @@ const RegistrationPage = () => {
               </div>
 
 
-            <div style={{ display: "flex", justifyContent: "flex-end", flexDirection: "column", textAlign: "left" }}>
+            <div style={{ display: "flex", justifyContent: "flex-end", flexDirection: "column", textAlign: "left" , paddingTop: "1px"}}>
             <label htmlFor="index-number">Student ID</label>
           
               <input 
@@ -63,8 +63,8 @@ const RegistrationPage = () => {
               />
               </div>
 
-            <div style={{ display: "flex", justifyContent: "flex-end", flexDirection: "column", textAlign: "left" }}>
-            <label htmlFor="index-number">Student ID</label>
+            <div style={{ display: "flex", justifyContent: "flex-end", flexDirection: "column", textAlign: "left", paddingTop: "1px"}}>
+            <label htmlFor="index-number">Phone number</label>
               <input
                 type="tel"
                 placeholder="Enter Your Phone number"
@@ -74,7 +74,7 @@ const RegistrationPage = () => {
               />
               </div>
 
-              <div style={{ display: "flex", justifyContent: "flex-end", flexDirection: "column", textAlign: "left" }}>
+             {/* <div style={{ display: "flex", justifyContent: "flex-end", flexDirection: "column", textAlign: "left" , paddingTop: "1px"}}>
               <label htmlFor="index-number">Email</label>
               <input
                 type="email"
@@ -83,9 +83,9 @@ const RegistrationPage = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
-              </div>
+              </div>*/}
 
-              <div style={{ display: "flex", justifyContent: "flex-end", flexDirection: "column", textAlign: "left" }}>
+              <div style={{ display: "flex", justifyContent: "flex-end", flexDirection: "column", textAlign: "left" , paddingTop: "1px" }}>
               <label htmlFor="index-number">Password</label>
               <input
                 type="password"
