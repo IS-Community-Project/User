@@ -1,4 +1,17 @@
-.navbar {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  .home-container {
+    width: 100%;
+  }
+  
+  /* Navbar */
+  .navbar {
     background-color: #3d3d3d;
     padding: 15px;
     display: flex;
@@ -9,47 +22,68 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-}
-
-
-
-
-/* Main container */
-.borrowed-container {
+    flex-wrap: wrap;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  
+  .navbar li {
+    padding: 10px 15px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nav-right {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Borrowed Items Section */
+  .borrowed-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0; /* Remove padding to ensure full coverage */
+    padding: 0;
     background-color: #f8f9fa;
-    height: 100vh; /* Make it full height */
-    width: 100vw; /* Full width */
-    gap: 20px; /* Adds spacing between sections */
-    margin-top: 15px;
-    margin-left: 30px;
-}
-
-/* Left Section: Borrowed items table */
-.borrowed-table {
+    height: 100vh;
+    width: 100vw;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 60px; /* Adjust for fixed navbar */
+  }
+  
+  /* Borrowed Items Table */
+  .borrowed-table {
     background: white;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     width: 35%;
     max-width: 400px;
-    height: 80vh; /* Adjust height to maintain full-page structure */
-    overflow-y: auto; /* Allows scrolling if content exceeds */
-}
-
-/* Heading */
-h2 {
+    height: 80vh;
+    overflow-y: auto;
+    flex-shrink: 0;
+  }
+  
+  h2 {
     font-size: 22px;
     margin-bottom: 15px;
     text-align: center;
-    color:#333;
-}
-
-/* Individual borrowed item row */
-.borrowed-row {
+    color: #333;
+  }
+  
+  /* Borrowed Item Row */
+  .borrowed-row {
     display: flex;
     align-items: center;
     background: #ffffff;
@@ -58,86 +92,91 @@ h2 {
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
-}
-
-.borrowed-row:hover {
-    transform: scale(1.02); /* Subtle hover effect */
-}
-
-/* Icon for each borrowed item */
-.icon {
+  }
+  
+  .borrowed-row:hover {
+    transform: scale(1.02);
+  }
+  
+  .icon {
     font-size: 26px;
     margin-right: 12px;
-}
-
-/* Borrowed item details */
-.borrowed-details {
+  }
+  
+  .borrowed-details {
     display: flex;
     flex-direction: column;
-}
-
-.borrowed-date {
+  }
+  
+  .borrowed-date {
     font-weight: bold;
     color: #555;
-}
-
-.borrowed-item {
+  }
+  
+  .borrowed-item {
     font-size: 16px;
     color: #333;
-}
-
-/* Right Section: Image */
-.borrowed-image {
-    flex: 1; /* Allows the image to fill available space */
+  }
+  
+  /* Borrowed Image Section */
+  .borrowed-image {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full height */
-    width: 65%; /* Takes up remaining space */
-}
-
-.borrowed-image img {
+    height: 100vh;
+    width: 65%;
+    min-width: 300px;
+  }
+  
+  .borrowed-image img {
     width: 100%;
     height: 80%;
-    border-radius: 0; /* Remove border-radius for full coverage */
+    border-radius: 0;
     object-fit: cover;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
     .borrowed-container {
-        flex-direction: column;
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 40px;
+      margin-top: 200px;
     }
-
+  
     .borrowed-table {
-        width: 90%;
-        height: auto; /* Allow it to expand naturally */
-        max-height: 80vh;
+      width: 90%;
+      height: auto;
+      max-height: 80vh;
     }
-
+  
     .borrowed-image {
-        width: 100%;
-        height: 50vh; /* Adjust image height for better mobile experience */
+      width: 100%;
+      height: 50vh;
+      margin-top: 100px;
     }
-}
-
-@media (max-width: 600px) {
+  }
+  
+  @media (max-width: 768px) {
     .borrowed-table {
-        width: 100%;
-        padding: 15px;
+      width: 100%;
+      padding: 15px;
     }
-
+  
     .borrowed-row {
-        flex-direction: column;
-        text-align: center;
+      flex-direction: column;
+      text-align: center;
     }
-
+  
     .icon {
-        margin-bottom: 5px;
+      margin-bottom: 5px;
     }
-
+  
     .borrowed-image {
-        width: 100%;
-        height: 40vh;
+      width: 100%;
+      height: 40vh;
     }
-}
+  }
+  
